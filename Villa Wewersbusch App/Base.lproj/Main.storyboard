@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wav-Te-yH4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="oGk-nV-G0t">
+            <objects>
+                <viewController id="Wav-Te-yH4" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kWY-FI-kiq"/>
+                        <viewControllerLayoutGuide type="bottom" id="E48-Fo-v8V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H07-Xr-OMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="9ah-y7-gXC" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="MPI-zd-w0o"/>
+                        <segue destination="4BG-Us-dR6" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="wyI-7R-Sy9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCr-e7-1t5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TVb-EG-TGa">
+            <objects>
+                <navigationController id="4BG-Us-dR6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5K3-Iw-dlU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FjE-k0-8eg" kind="relationship" relationship="rootViewController" id="1H4-WH-BZY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pf-cn-QOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="412"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w6s-dj-lF0">
+            <objects>
+                <viewController id="FjE-k0-8eg" customClass="ViewController" customModule="Villa_Wewersbusch_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a9f-r6-FE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Nf-g2-dgF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Igv-Df-RQa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20419533549999999" green="0.4719341695" blue="0.96479749680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F1L-wW-RTC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="wn2-PC-k9z"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="open" destination="wn2-PC-k9z" id="SkI-yH-u9g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yR7-dk-JuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="412"/>
+        </scene>
+        <!--Back TableVC-->
+        <scene sceneID="lWi-qE-EtH">
+            <objects>
+                <tableViewController id="9ah-y7-gXC" customClass="BackTableVC" customModule="Villa_Wewersbusch_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JbH-mh-Jzr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Home" id="oRj-ZF-SVA">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oRj-ZF-SVA" id="Srh-GA-khi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="FjE-k0-8eg" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="JLU-50-oaT"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Speiseplan" id="LXL-vv-oDH">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LXL-vv-oDH" id="Bth-PE-VRd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="UAg-De-QoW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="P74-fb-csi"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Schule" id="vYj-CZ-3kn">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vYj-CZ-3kn" id="Ot9-OT-on4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="cbS-qh-7YV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="HXl-iK-jw0"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Internat" id="IDW-9K-7Kp">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IDW-9K-7Kp" id="xsv-Ws-Pjk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1SS-ay-Iff" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c97-K2-UsB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9ah-y7-gXC" id="TbF-gW-6LZ"/>
+                            <outlet property="delegate" destination="9ah-y7-gXC" id="IXl-IZ-3QE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJh-Zt-dc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="-391"/>
+        </scene>
+        <!--Speiseplan Table View Controller-->
+        <scene sceneID="jn4-7j-3Mh">
+            <objects>
+                <tableViewController id="UAg-De-QoW" customClass="SpeiseplanTableViewController" customModule="Villa_Wewersbusch_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="129" sectionHeaderHeight="28" sectionFooterHeight="28" id="zzd-hE-tph">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1w-8f-Qd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.5999999999999" y="-463.71814092953525"/>
+        </scene>
+        <!--Internat-->
+        <scene sceneID="1fx-pH-YdA">
+            <objects>
+                <viewController id="1SS-ay-Iff" customClass="Internat" customModule="Villa_Wewersbusch_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pLP-ja-4Y2"/>
+                        <viewControllerLayoutGuide type="bottom" id="2PA-pp-xg3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I4E-kJ-bFu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbO-1J-V7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="-1940"/>
+        </scene>
+        <!--Schule-->
+        <scene sceneID="gKp-om-hoN">
+            <objects>
+                <viewController id="cbS-qh-7YV" customClass="Schule" customModule="Villa_Wewersbusch_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wbu-Sf-eyJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8jb-dq-cRb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aQd-w2-ghz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lil-hW-Vji">
+                                <rect key="frame" x="177" y="304" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdL-O0-36S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="-1171"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1H4-WH-BZY"/>
+    </inferredMetricsTieBreakers>
+</document>

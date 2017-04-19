@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C56F8BC11E73EBEE00D618B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BC01E73EBEE00D618B6 /* AppDelegate.swift */; };
+		C56F8BC31E73EBEE00D618B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BC21E73EBEE00D618B6 /* ViewController.swift */; };
+		C56F8BC61E73EBEE00D618B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56F8BC41E73EBEE00D618B6 /* Main.storyboard */; };
+		C56F8BC81E73EBEE00D618B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56F8BC71E73EBEE00D618B6 /* Assets.xcassets */; };
+		C56F8BCB1E73EBEE00D618B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56F8BC91E73EBEE00D618B6 /* LaunchScreen.storyboard */; };
+		C56F8BD51E73ED9100D618B6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BD41E73ED9100D618B6 /* SWRevealViewController.m */; };
+		C56F8BD81E73F37E00D618B6 /* BackTableVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BD71E73F37E00D618B6 /* BackTableVc.swift */; };
+		C56F8BDA1E73FAC200D618B6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BD91E73FAC200D618B6 /* Home.swift */; };
+		C56F8BDE1E740E8500D618B6 /* Schule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BDD1E740E8500D618B6 /* Schule.swift */; };
+		C56F8BE01E74841700D618B6 /* Internat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BDF1E74841700D618B6 /* Internat.swift */; };
+		C56F8BE21E748B2C00D618B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C56F8BE11E748B2C00D618B6 /* GoogleService-Info.plist */; };
+		C5F5B4A01EA7742000F852A9 /* SpeiseplanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5B49F1EA7742000F852A9 /* SpeiseplanTableViewController.swift */; };
+		C5F5B4A21EA779B600F852A9 /* Menue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5B4A11EA779B600F852A9 /* Menue.swift */; };
+		C5F5B4A51EA78D5200F852A9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F5B4A41EA78D5200F852A9 /* Extension.swift */; };
+		EAB3A07618F294D985FED61B /* Pods_Villa_Wewersbusch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0832925854CE21287245EF /* Pods_Villa_Wewersbusch_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B0832925854CE21287245EF /* Pods_Villa_Wewersbusch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Villa_Wewersbusch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C335828F01A83A3DF0134F4C /* Pods-Villa Wewersbusch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Villa Wewersbusch App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Villa Wewersbusch App/Pods-Villa Wewersbusch App.release.xcconfig"; sourceTree = "<group>"; };
+		C56F8BBD1E73EBEE00D618B6 /* Villa Wewersbusch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Villa Wewersbusch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56F8BC01E73EBEE00D618B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C56F8BC21E73EBEE00D618B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C56F8BC51E73EBEE00D618B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C56F8BC71E73EBEE00D618B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C56F8BCA1E73EBEE00D618B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C56F8BCC1E73EBEE00D618B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56F8BD21E73ED9100D618B6 /* Villa Wewersbusch App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Villa Wewersbusch App-Bridging-Header.h"; sourceTree = "<group>"; };
+		C56F8BD31E73ED9100D618B6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C56F8BD41E73ED9100D618B6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C56F8BD71E73F37E00D618B6 /* BackTableVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVc.swift; sourceTree = "<group>"; };
+		C56F8BD91E73FAC200D618B6 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C56F8BDD1E740E8500D618B6 /* Schule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schule.swift; sourceTree = "<group>"; };
+		C56F8BDF1E74841700D618B6 /* Internat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Internat.swift; sourceTree = "<group>"; };
+		C56F8BE11E748B2C00D618B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5F5B49F1EA7742000F852A9 /* SpeiseplanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeiseplanTableViewController.swift; sourceTree = "<group>"; };
+		C5F5B4A11EA779B600F852A9 /* Menue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menue.swift; sourceTree = "<group>"; };
+		C5F5B4A41EA78D5200F852A9 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D23845039E0611820A22D883 /* Pods-Villa Wewersbusch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Villa Wewersbusch App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Villa Wewersbusch App/Pods-Villa Wewersbusch App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C56F8BBA1E73EBEE00D618B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB3A07618F294D985FED61B /* Pods_Villa_Wewersbusch_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59EA703CCB38AA69701DDDE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B0832925854CE21287245EF /* Pods_Villa_Wewersbusch_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7623C8236F11E58A898F4786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D23845039E0611820A22D883 /* Pods-Villa Wewersbusch App.debug.xcconfig */,
+				C335828F01A83A3DF0134F4C /* Pods-Villa Wewersbusch App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C56F8BB41E73EBEE00D618B6 = {
+			isa = PBXGroup;
+			children = (
+				C5F5B4A31EA779BD00F852A9 /* Modal */,
+				C56F8BBF1E73EBEE00D618B6 /* Villa Wewersbusch App */,
+				C56F8BBE1E73EBEE00D618B6 /* Products */,
+				7623C8236F11E58A898F4786 /* Pods */,
+				59EA703CCB38AA69701DDDE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C56F8BBE1E73EBEE00D618B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C56F8BBD1E73EBEE00D618B6 /* Villa Wewersbusch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C56F8BBF1E73EBEE00D618B6 /* Villa Wewersbusch App */ = {
+			isa = PBXGroup;
+			children = (
+				C56F8BD61E73EDA000D618B6 /* Menu */,
+				C56F8BC01E73EBEE00D618B6 /* AppDelegate.swift */,
+				C56F8BC21E73EBEE00D618B6 /* ViewController.swift */,
+				C56F8BF41E754E2300D618B6 /* Speiseplan */,
+				C56F8BC41E73EBEE00D618B6 /* Main.storyboard */,
+				C56F8BC71E73EBEE00D618B6 /* Assets.xcassets */,
+				C56F8BC91E73EBEE00D618B6 /* LaunchScreen.storyboard */,
+				C56F8BCC1E73EBEE00D618B6 /* Info.plist */,
+				C56F8BE11E748B2C00D618B6 /* GoogleService-Info.plist */,
+			);
+			path = "Villa Wewersbusch App";
+			sourceTree = "<group>";
+		};
+		C56F8BD61E73EDA000D618B6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C56F8BD21E73ED9100D618B6 /* Villa Wewersbusch App-Bridging-Header.h */,
+				C56F8BD31E73ED9100D618B6 /* SWRevealViewController.h */,
+				C56F8BD41E73ED9100D618B6 /* SWRevealViewController.m */,
+				C56F8BD71E73F37E00D618B6 /* BackTableVc.swift */,
+				C56F8BD91E73FAC200D618B6 /* Home.swift */,
+				C56F8BDD1E740E8500D618B6 /* Schule.swift */,
+				C56F8BDF1E74841700D618B6 /* Internat.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		C56F8BF41E754E2300D618B6 /* Speiseplan */ = {
+			isa = PBXGroup;
+			children = (
+				C5F5B49F1EA7742000F852A9 /* SpeiseplanTableViewController.swift */,
+			);
+			name = Speiseplan;
+			sourceTree = "<group>";
+		};
+		C5F5B4A31EA779BD00F852A9 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C5F5B4A11EA779B600F852A9 /* Menue.swift */,
+				C5F5B4A41EA78D5200F852A9 /* Extension.swift */,
+			);
+			name = Modal;
+			path = "Villa Wewersbusch App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C56F8BBC1E73EBEE00D618B6 /* Villa Wewersbusch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56F8BCF1E73EBEE00D618B6 /* Build configuration list for PBXNativeTarget "Villa Wewersbusch App" */;
+			buildPhases = (
+				44351D3565EC4C91A7B23DA8 /* [CP] Check Pods Manifest.lock */,
+				C56F8BB91E73EBEE00D618B6 /* Sources */,
+				C56F8BBA1E73EBEE00D618B6 /* Frameworks */,
+				C56F8BBB1E73EBEE00D618B6 /* Resources */,
+				801E69A8BCF71289C62ADE22 /* [CP] Embed Pods Frameworks */,
+				EC7676F24770924082485873 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Villa Wewersbusch App";
+			productName = "Villa Wewersbusch App";
+			productReference = C56F8BBD1E73EBEE00D618B6 /* Villa Wewersbusch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C56F8BB51E73EBEE00D618B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Felix Kolewe";
+				TargetAttributes = {
+					C56F8BBC1E73EBEE00D618B6 = {
+						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C56F8BB81E73EBEE00D618B6 /* Build configuration list for PBXProject "Villa Wewersbusch App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C56F8BB41E73EBEE00D618B6;
+			productRefGroup = C56F8BBE1E73EBEE00D618B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C56F8BBC1E73EBEE00D618B6 /* Villa Wewersbusch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C56F8BBB1E73EBEE00D618B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56F8BCB1E73EBEE00D618B6 /* LaunchScreen.storyboard in Resources */,
+				C56F8BE21E748B2C00D618B6 /* GoogleService-Info.plist in Resources */,
+				C56F8BC81E73EBEE00D618B6 /* Assets.xcassets in Resources */,
+				C56F8BC61E73EBEE00D618B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44351D3565EC4C91A7B23DA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		801E69A8BCF71289C62ADE22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Villa Wewersbusch App/Pods-Villa Wewersbusch App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7676F24770924082485873 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Villa Wewersbusch App/Pods-Villa Wewersbusch App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C56F8BB91E73EBEE00D618B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F5B4A01EA7742000F852A9 /* SpeiseplanTableViewController.swift in Sources */,
+				C56F8BC31E73EBEE00D618B6 /* ViewController.swift in Sources */,
+				C56F8BC11E73EBEE00D618B6 /* AppDelegate.swift in Sources */,
+				C5F5B4A21EA779B600F852A9 /* Menue.swift in Sources */,
+				C56F8BD81E73F37E00D618B6 /* BackTableVc.swift in Sources */,
+				C5F5B4A51EA78D5200F852A9 /* Extension.swift in Sources */,
+				C56F8BDA1E73FAC200D618B6 /* Home.swift in Sources */,
+				C56F8BD51E73ED9100D618B6 /* SWRevealViewController.m in Sources */,
+				C56F8BE01E74841700D618B6 /* Internat.swift in Sources */,
+				C56F8BDE1E740E8500D618B6 /* Schule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C56F8BC41E73EBEE00D618B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56F8BC51E73EBEE00D618B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C56F8BC91E73EBEE00D618B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56F8BCA1E73EBEE00D618B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C56F8BCD1E73EBEE00D618B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C56F8BCE1E73EBEE00D618B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C56F8BD01E73EBEE00D618B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23845039E0611820A22D883 /* Pods-Villa Wewersbusch App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Villa Wewersbusch App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fk.Villa-Wewersbusch-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Villa Wewersbusch App/Villa Wewersbusch App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C56F8BD11E73EBEE00D618B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C335828F01A83A3DF0134F4C /* Pods-Villa Wewersbusch App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Villa Wewersbusch App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fk.Villa-Wewersbusch-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Villa Wewersbusch App/Villa Wewersbusch App-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C56F8BB81E73EBEE00D618B6 /* Build configuration list for PBXProject "Villa Wewersbusch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56F8BCD1E73EBEE00D618B6 /* Debug */,
+				C56F8BCE1E73EBEE00D618B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56F8BCF1E73EBEE00D618B6 /* Build configuration list for PBXNativeTarget "Villa Wewersbusch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56F8BD01E73EBEE00D618B6 /* Debug */,
+				C56F8BD11E73EBEE00D618B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C56F8BB51E73EBEE00D618B6 /* Project object */;
+}

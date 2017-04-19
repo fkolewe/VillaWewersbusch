@@ -1,0 +1,6 @@
+framework module Pods_Villa_Wewersbusch_App {
+  umbrella header "Pods-Villa Wewersbusch App-umbrella.h"
+
+  export *
+  module * { export * }
+}
