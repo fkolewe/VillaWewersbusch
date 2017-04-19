@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     }
 
-
+//Mal sehen!
     
     let menueImageView: UIImageView = {
         let imageView = UIImageView()
