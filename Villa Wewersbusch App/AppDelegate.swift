@@ -17,7 +17,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // Eventuell muss das hier hinzu. (LBTA Ep 1)
+        //window = UIWindow(frame: UIScreen.main.bounds)
+        //window?.makeKeyAndVisible()
+        
+        //window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        
+        
+        //Navigationsleiste anpassen:
+        
+        let backgroundColor = UIColor(r: 49, g: 99, b: 180)
+        
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = backgroundColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = false
+        
+        //UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : (UIFont(name: "FONT NAME", size: 18))!, NSForegroundColorAttributeName: UIColor.whiteColor()] }
+        
+        
+        
+        //Firebase-Konfiguration:
+        
         FIRApp.configure()
+        
+        
         // Override point for customization after application launch.
         return true
     }

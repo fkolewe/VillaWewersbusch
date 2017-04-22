@@ -80,7 +80,7 @@
 		C56F8BB41E73EBEE00D618B6 = {
 			isa = PBXGroup;
 			children = (
-				C5F5B4A31EA779BD00F852A9 /* Modal */,
+				C5F5B4A31EA779BD00F852A9 /* Model */,
 				C56F8BBF1E73EBEE00D618B6 /* Villa Wewersbusch App */,
 				C56F8BBE1E73EBEE00D618B6 /* Products */,
 				7623C8236F11E58A898F4786 /* Pods */,
@@ -134,13 +134,13 @@
 			name = Speiseplan;
 			sourceTree = "<group>";
 		};
-		C5F5B4A31EA779BD00F852A9 /* Modal */ = {
+		C5F5B4A31EA779BD00F852A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C5F5B4A11EA779B600F852A9 /* Menue.swift */,
 				C5F5B4A41EA78D5200F852A9 /* Extension.swift */,
 			);
-			name = Modal;
+			name = Model;
 			path = "Villa Wewersbusch App";
 			sourceTree = "<group>";
 		};

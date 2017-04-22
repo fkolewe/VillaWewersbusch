@@ -12,19 +12,10 @@ import Firebase
 
 class SpeiseplanTableViewController: UITableViewController {
 
-    var ref: FIRDatabaseReference!
+    //var ref: FIRDatabaseReference!
     
     let cellId = "cellId"
     var menues = [Menue]()
-    
-    let menueImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 24
-        imageView.layer.masksToBounds = true
-        imageView.contentMode = .scaleAspectFill
-        return imageView
-    }()
     
     
     override func viewDidLoad() {
@@ -36,13 +27,27 @@ class SpeiseplanTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()funcch fetUser
         
+        view.backgroundColor = UIColor.white
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menü", style: .plain, target: self.revealViewController() , action: #selector(SWRevealViewController.revealToggle(_:)))
+        
+        
+        //let image = UIImage(named: "MenuButton")
+        //let smallImage = resizeImage(image: image!, targetSize: CGSize.init(width: 40, height: 38))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(image: smallImage, style: .plain, target: self , action: nil)
+        
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Zurück", style: .plain, target: self, action: #selector(handleCancel))
+        //view.addSubview(menueTitleView)
         
-        
+        //setupMenueTitleView()
+        //setupTableView()
+
         tableView.register(MenueCell.self, forCellReuseIdentifier: cellId)
         
+        //tableView.contentInset = UIEdgeInsets(top: 100,left: 0,bottom: 0,right: 0)
+
+        //tableView.tableHeaderView = menueTitleView
         
         fetchMenue()
     }
@@ -61,11 +66,11 @@ class SpeiseplanTableViewController: UITableViewController {
                 
                 self.menues.append(menue)
                 
-                print(menue.tag)
+                //print(menue.tag)
                 
                 
                 if let menueImageUrl = dictionary["menueImageUrl"] as? String {
-                    self.menueImageView.loadImageUsingCacheWithUrlString(urlString: menueImageUrl)
+                    menueImageView.loadImageUsingCacheWithUrlString(urlString: menueImageUrl)
                 }
                 
                 DispatchQueue.main.async(execute: {
@@ -76,7 +81,7 @@ class SpeiseplanTableViewController: UITableViewController {
             }
         
         })
-    
+
     }
     
 
@@ -92,58 +97,110 @@ class SpeiseplanTableViewController: UITableViewController {
         return menues.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 100.0;//Choose your custom row height
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MenueCell
         
         let menue = menues[indexPath.row]
         
-        cell.textLabel?.text = menue.tag
-        cell.detailTextLabel?.text = menue.gericht
+        cell.dayLabel.text = menue.tag
+
+        cell.menueLabel.text = menue.gericht
         
- 
-         // let menueImageView = UIImageView()
+        //cell.menueLabel.text = "Dies ist ein Test mit einem sehr langen Text. Mal sehen was passiert."
+        
+        let menueImageView = UIImageView()
+        menueImageView.translatesAutoresizingMaskIntoConstraints = false
+        menueImageView.contentMode = .scaleAspectFill
+        menueImageView.layer.cornerRadius = 20
+        menueImageView.clipsToBounds = true
         
         if let menueImageUrl = menue.menueImageUrl{
+            
             cell.imageView?.loadImageUsingCacheWithUrlString(urlString: menueImageUrl)
+            
         }
-        
-     
         
         return cell
     }
     
-    
-    
-    
-
-
-    
     func handleCancel() {
         dismiss(animated: true, completion: nil)
     }
- 
+    
+    let menueTitleView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "speiseplan")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
+        
+        return imageView
+    }()
+    
+    /*func setupMenueTitleView(){
+    menueTitleView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive=true
+    menueTitleView.topAnchor.constraint(equalTo: view.topAnchor).isActive=true
+    menueTitleView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive=true
+    menueTitleView.heightAnchor.constraint(equalToConstant: 150).isActive=true
+    }
+    */
+    
 
 }
 
+let menueImageView: UIImageView = {
+    let imageView = UIImageView()
+    imageView.translatesAutoresizingMaskIntoConstraints = false
+    imageView.layer.cornerRadius = 24
+    imageView.layer.masksToBounds = true
+    imageView.contentMode = .scaleAspectFill
+    return imageView
+}()
+
+
 class MenueCell: UITableViewCell{
-
-    override init (style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
-  
-   /* let containerView = UIView()
-
-    containerView.addSubview(menueImageView)
-       
-    menueImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
-    menueImageView.centerYAnchor.constraintEqualToAnchor(self.centerYAnchor).isactive = true
-    menueImageView.widthAnchor.constraintEqualToConstant(48).isactive = true
-    menueImageView.heightAnchor.constraintEqualToConstant(48).isactive = true
     
-        */
+    var dayLabel: UILabel = UILabel()
+    var menueLabel: UILabel = UILabel()
+    //var imageLable: UILabel = UILabel()
+    
+    override init (style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        let textColor = UIColor(r: 49, g: 99, b: 180)
+        
+        dayLabel.textColor = textColor
+        dayLabel.font = menueLabel.font.withSize(20)
+        
+        menueLabel.textColor = textColor
+        menueLabel.font = menueLabel.font.withSize(12)
+        menueLabel.numberOfLines = 4
+        
+        //dayLabel.backgroundColor = UIColor.blue
+        //menueLabel.backgroundColor = UIColor.green
+        
+        self.contentView.addSubview(dayLabel)
+        self.contentView.addSubview(menueLabel)
+        //self.contentView.addSubview(imageLabel)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("initCoder")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        dayLabel.frame = CGRect(x: 20, y: 12, width: self.bounds.size.width/3, height: self.bounds.size.height-24)
+        menueLabel.frame = CGRect(x: self.bounds.size.width/3+20, y: 12, width: self.bounds.size.width*2/3-40, height: self.bounds.size.height-24)
+        //imageLabel = UILabel(frame: CGRectMake(0, 0, 0, 0))
+
+    }
 }
+
 
