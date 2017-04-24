@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Wappen Villa Wewersbusch weiss.png",
+      "filename" : "Wappen Villa Wewersbusch 1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Wappen Villa Wewersbusch 2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Wappen Villa Wewersbusch weiss.png",
       "scale" : "3x"
     }
   ],
