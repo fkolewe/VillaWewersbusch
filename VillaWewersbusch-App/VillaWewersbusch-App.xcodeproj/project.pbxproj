@@ -14,6 +14,7 @@
 		7F89E5B11EAF246300881848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F89E5AF1EAF246300881848 /* LaunchScreen.storyboard */; };
 		7F89E5BC1EAF246300881848 /* VillaWewersbusch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F89E5BB1EAF246300881848 /* VillaWewersbusch_AppTests.swift */; };
 		7F89E5C71EAF246300881848 /* VillaWewersbusch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F89E5C61EAF246300881848 /* VillaWewersbusch_AppUITests.swift */; };
+		7F89E5D51EAF257B00881848 /* speiseplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F89E5D41EAF257B00881848 /* speiseplan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7F89E5C21EAF246300881848 /* VillaWewersbusch-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VillaWewersbusch-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F89E5C61EAF246300881848 /* VillaWewersbusch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillaWewersbusch_AppUITests.swift; sourceTree = "<group>"; };
 		7F89E5C81EAF246300881848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F89E5D41EAF257B00881848 /* speiseplan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = speiseplan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7F89E5A61EAF246200881848 /* AppDelegate.swift */,
 				7F89E5A81EAF246200881848 /* ViewController.swift */,
+				7F89E5D41EAF257B00881848 /* speiseplan.swift */,
 				7F89E5AA1EAF246300881848 /* Main.storyboard */,
 				7F89E5AD1EAF246300881848 /* Assets.xcassets */,
 				7F89E5AF1EAF246300881848 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F89E5A91EAF246200881848 /* ViewController.swift in Sources */,
+				7F89E5D51EAF257B00881848 /* speiseplan.swift in Sources */,
 				7F89E5A71EAF246200881848 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
