@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var open: UIBarButtonItem!
    
     override func viewDidLoad() {
@@ -23,8 +22,8 @@ class ViewController: UIViewController {
 
         
         let image = UIImage(named: "MenuButton")
-        let smallImage = resizeImage(image: image!, targetSize: CGSize.init(width: 40, height: 38))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: smallImage, style: .plain, target: self , action: nil)
+        //let smallImage = resizeImage(image: image!, targetSize: CGSize.init(width: 40, height: 38))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self , action: nil)
         
         //open.target = self.revealViewController()
         //open.action = #selector(SWRevealViewController.revealToggle(_:))
